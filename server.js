@@ -38,6 +38,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page'
+  });
+});
+
 app.get('/json', (req, res) => {
   res.send({
     title: 'Title',
